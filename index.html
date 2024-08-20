@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Happy+Monkey&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+
+        <h1>Employee Data</h1>
+        <button id="reg-btn" onclick="openModal()">Register Employee</button>
+        <button id="reset-btn">Reset</button>
+
+        <div id="popup" class="popup">
+            <article id="article-signup">
+                <section>
+                    <form class="signup-section" id="myForm">
+                        <span id="close">&times;</span>
+                        <div>
+                            <h2 class="signup">SIGN UP</h2>
+                            <p class="pt-2">Username</p>
+                            <input type="text" id="fname"
+                                placeholder="Enter your user name ">
+                            <small id="err-name">error</small>
+
+                            <p class="pt-2">mobile number</p>
+                            <input type="text" id="contact"
+                                placeholder="Enter your mobile number">
+                            <small id="err-contact">error</small>
+
+                            <p class="pt-2">Email</p>
+                            <input type="email" id="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email">
+                            <small id="err-mail">error</small>
+
+                            <p class="pt-2">salary</p>
+                            <input type="text" id="salary"
+                                placeholder="Enter your salary">
+                            <small id="err-salary">error</small>
+                            <button type="submit" id="save-btn">save</button>
+                            <button type="button"
+                                id="update-btn">Update</button>
+                        </form>
+                    </div>
+                </section>
+            </article>
+        </div>
+        <section id="employee-container">
+
+        </section>
+
+        <script src="script.js"></script>
+    </body>
 </html>
